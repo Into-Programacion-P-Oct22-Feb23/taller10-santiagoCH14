@@ -27,7 +27,7 @@ public class Problema00 {
                 suma = suma + notas[i][j];
 
             }
-            sumaNotas[i] = suma; // 
+            sumaNotas[i] = suma;
         }
 
         // Presentación de resultados

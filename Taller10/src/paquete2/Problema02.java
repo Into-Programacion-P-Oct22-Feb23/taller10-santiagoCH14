@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+     * To change this license header, choose License Headers in Project Properties.
+     * To change this template file, choose Tools | Templates
+     * and open the template in the editor.
  */
 package paquete2;
 
@@ -22,26 +22,23 @@ public class Problema02 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
 
-        int[][] ventas = new int[2][5];
         String[] vendedores = {"Jessica Cole", "Robert Wallace"};
-        int suma = 0;
+        int[][] ventas = new int[2][5];
+        int acumulacion = 0;
 
         for (int i = 0; i < vendedores.length; i++) {
+            System.out.printf("Ingrese la venta de: %s\n", vendedores[i]);
             for (int j = 0; j < ventas[i].length; j++) {
-                System.out.println("Ingrese la cantidad de ventas hechas en el dia: ");
+                System.out.println("Ingrese la venta total que hizo en el día: ");
                 ventas[i][j] = entrada.nextInt();
-
-                suma = suma + ventas[i][j];
-
+                acumulacion = acumulacion + ventas[i][j];
             }
-
         }
         for (int i = 0; i < vendedores.length; i++) {
             System.out.printf("Vendedor(a) %s\n", vendedores[i]);
-
         }
-        System.out.printf("En total se realizaro una cantidad de: %d en ventas.\n", suma);
-
+        System.out.printf("Ha realizado un total de %d en ventas.\n",
+                acumulacion);
     }
 
 }

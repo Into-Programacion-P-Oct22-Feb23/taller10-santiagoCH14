@@ -17,9 +17,9 @@ public class Problema01 {
     public static void main(String[] args) {
         // TODO code application logic here
         double[][] notas = {{9, 10, 7, 8},
-                           {10, 5, 7, 9},
-                           {7, 9.4, 10, 9}};
-        
+        {10, 5, 7, 9},
+        {7, 9.4, 10, 9}};
+
         String[] nombresEstudiante = {"Jerry Ponce", "Gabriela Lewis", "David Bell"};
         double[] notaPromedio = new double[3];
         double promedio;
@@ -33,7 +33,7 @@ public class Problema01 {
 
             }
             promedio = suma / notas[i].length;
-            notaPromedio[i] = promedio; 
+            notaPromedio[i] = promedio;
         }
 
         // Presentación de resultados
